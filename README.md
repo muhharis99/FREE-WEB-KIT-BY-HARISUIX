@@ -1,6 +1,6 @@
 <p align="center">
   <h1 align="center">🚀 FREE-WEB-KIT-BY-HARISUIX</h1>
-  <p align="center">Modern • Free • Ready-to-Use Landing Page Templates</p>
+  <p align="center">Kumpulan template landing page gratis, modern, dan responsif yang dibangun dengan HTML, Bootstrap, dan JavaScript. Dirancang untuk mendukung akses yang merata, kolaborasi terbuka, dan berbagi sumber daya secara bebas. Siap digunakan, mudah dikustomisasi, serta dapat dimanfaatkan oleh siapa saja untuk berbagai kebutuhan tanpa batasan.</p>
 </p>
 
 <p align="center">
