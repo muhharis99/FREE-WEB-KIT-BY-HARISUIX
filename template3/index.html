@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SavoryBite — Fine Dining Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======================== NAVBAR ======================== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#home" class="navbar__logo">
+        <span class="navbar__logo-icon">✦</span>
+        <span class="navbar__logo-text">SavoryBite</span>
+      </a>
+      <nav class="navbar__nav" id="navMenu">
+        <a href="#home" class="navbar__link">Home</a>
+        <a href="#menu" class="navbar__link">Menu</a>
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#chef" class="navbar__link">Chef</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+      </nav>
+      <a href="#reservasi" class="btn btn--primary navbar__cta">Reservasi</a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__overlay"></div>
+      <div class="hero__grain"></div>
+    </div>
+    <div class="hero__content reveal-hero">
+      <span class="hero__eyebrow">Fine Dining · Jakarta</span>
+      <h1 class="hero__headline">
+        Experience the<br />
+        <em>Taste of Perfection</em>
+      </h1>
+      <p class="hero__desc">
+        Setiap hidangan kami adalah karya seni — dibuat dengan bahan terbaik,<br class="desktop-br" />
+        diolah oleh tangan maestro, dan disajikan dengan keanggunan tanpa kompromi.
+      </p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--ghost">Lihat Menu</a>
+        <a href="#reservasi" class="btn btn--warm">Buat Reservasi</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======================== TAGLINE STRIP ======================== -->
+  <section class="strip">
+    <div class="strip__inner">
+      <span>Crafted with Passion</span>
+      <span class="strip__dot">✦</span>
+      <span>Premium Ingredients</span>
+      <span class="strip__dot">✦</span>
+      <span>Unforgettable Flavors</span>
+      <span class="strip__dot">✦</span>
+      <span>Fine Dining Experience</span>
+      <span class="strip__dot">✦</span>
+      <span>Crafted with Passion</span>
+      <span class="strip__dot">✦</span>
+      <span>Premium Ingredients</span>
+      <span class="strip__dot">✦</span>
+      <span>Unforgettable Flavors</span>
+      <span class="strip__dot">✦</span>
+    </div>
+  </section>
+
+  <!-- ======================== MENU SECTION ======================== -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Signature</span>
+        <h2 class="section-title">Menu Pilihan</h2>
+        <p class="section-desc">Kreasi eksklusif yang memadukan cita rasa lokal dengan teknik kuliner kelas dunia.</p>
+      </div>
+
+      <div class="menu__filters reveal">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="main">Main Course</button>
+        <button class="filter-btn" data-filter="starter">Starter</button>
+        <button class="filter-btn" data-filter="dessert">Dessert</button>
+      </div>
+
+      <div class="menu__grid">
+
+        <article class="menu-card reveal" data-category="starter">
+          <div class="menu-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Beef Tartare" class="menu-card__img" loading="lazy" />
+            <span class="menu-card__badge">Chef's Pick</span>
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__top">
+              <h3 class="menu-card__name">Wagyu Beef Tartare</h3>
+              <span class="menu-card__price">Rp 285.000</span>
+            </div>
+            <p class="menu-card__desc">Daging wagyu segar dengan egg yolk confit, truffle aioli, dan crispy capers. Sensasi umami yang tak tertandingi.</p>
+            <div class="menu-card__meta">
+              <span class="menu-card__tag">Starter</span>
+              <span class="menu-card__rating">★ 4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-category="main">
+          <div class="menu-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="Grilled Ribeye" class="menu-card__img" loading="lazy" />
+            <span class="menu-card__badge popular">Popular</span>
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__top">
+              <h3 class="menu-card__name">Prime Ribeye 300gr</h3>
+              <span class="menu-card__price">Rp 620.000</span>
+            </div>
+            <p class="menu-card__desc">Ribeye dry-aged 28 hari, dimasak medium rare sempurna, disajikan dengan red wine reduction dan roasted heritage potatoes.</p>
+            <div class="menu-card__meta">
+              <span class="menu-card__tag">Main Course</span>
+              <span class="menu-card__rating">★ 5.0</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-category="main">
+          <div class="menu-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80" alt="Lobster Bisque" class="menu-card__img" loading="lazy" />
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__top">
+              <h3 class="menu-card__name">Lobster Thermidor</h3>
+              <span class="menu-card__price">Rp 780.000</span>
+            </div>
+            <p class="menu-card__desc">Lobster segar dipanggang dengan saus krim Dijon, tarragon, dan keju Gruyère. Kemewahan dalam setiap suapan.</p>
+            <div class="menu-card__meta">
+              <span class="menu-card__tag">Main Course</span>
+              <span class="menu-card__rating">★ 4.8</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-category="starter">
+          <div class="menu-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1621501946819-a84cb9e4b3e0?w=600&q=80" alt="Burrata Salad" class="menu-card__img" loading="lazy" />
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__top">
+              <h3 class="menu-card__name">Burrata Caprese</h3>
+              <span class="menu-card__price">Rp 195.000</span>
+            </div>
+            <p class="menu-card__desc">Burrata segar impor Italia dengan heirloom tomatoes, fresh basil, aged balsamic, dan extra virgin olive oil premium.</p>
+            <div class="menu-card__meta">
+              <span class="menu-card__tag">Starter</span>
+              <span class="menu-card__rating">★ 4.7</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-category="dessert">
+          <div class="menu-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80" alt="Chocolate Lava" class="menu-card__img" loading="lazy" />
+            <span class="menu-card__badge">New</span>
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__top">
+              <h3 class="menu-card__name">Dark Chocolate Soufflé</h3>
+              <span class="menu-card__price">Rp 145.000</span>
+            </div>
+            <p class="menu-card__desc">Soufflé cokelat Valrhona 72% dengan vanilla Tahitian ice cream dan gold leaf. Keajaiban pastry dalam satu sajian.</p>
+            <div class="menu-card__meta">
+              <span class="menu-card__tag">Dessert</span>
+              <span class="menu-card__rating">★ 4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-category="dessert">
+          <div class="menu-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80" alt="Creme Brulee" class="menu-card__img" loading="lazy" />
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__top">
+              <h3 class="menu-card__name">Crème Brûlée Klasik</h3>
+              <span class="menu-card__price">Rp 115.000</span>
+            </div>
+            <p class="menu-card__desc">Custard vanila Madagascar yang lembut dengan lapisan karamel renyah, dihias fresh berries dan edible flowers.</p>
+            <div class="menu-card__meta">
+              <span class="menu-card__tag">Dessert</span>
+              <span class="menu-card__rating">★ 4.8</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== ABOUT SECTION ======================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image-col reveal">
+          <div class="about__img-stack">
+            <div class="about__img-main">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="Restaurant ambience" loading="lazy" />
+            </div>
+            <div class="about__img-accent">
+              <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&q=80" alt="Chef at work" loading="lazy" />
+            </div>
+            <div class="about__stat-card">
+              <span class="about__stat-num">12+</span>
+              <span class="about__stat-label">Tahun Pengalaman</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__text-col reveal">
+          <span class="section-label">Tentang Kami</span>
+          <h2 class="section-title">Warisan Rasa,<br /><em>Seni di Setiap Sajian</em></h2>
+          <p class="about__lead">
+            SavoryBite lahir dari sebuah keyakinan sederhana: makanan terbaik adalah makanan yang dibuat dengan cinta, bahan terpilih, dan teknik yang tak pernah berhenti berkembang.
+          </p>
+          <p class="about__body">
+            Sejak 2012, kami telah melayani para penikmat kuliner Jakarta yang menghargai keistimewaan. Dapur kami adalah laboratorium rasa di mana tradisi bertemu inovasi — di mana resep nenek moyang dirayakan dengan sentuhan kontemporer yang berani.
+          </p>
+          <p class="about__body">
+            Setiap bahan kami kurasi langsung dari petani lokal terpercaya dan importir premium. Kami percaya bahwa kesempurnaan dimulai jauh sebelum hidangan tiba di meja Anda.
+          </p>
+          <div class="about__pillars">
+            <div class="about__pillar">
+              <span class="about__pillar-icon">🌿</span>
+              <div>
+                <strong>Farm to Table</strong>
+                <p>Bahan segar langsung dari sumber terbaik</p>
+              </div>
+            </div>
+            <div class="about__pillar">
+              <span class="about__pillar-icon">🏆</span>
+              <div>
+                <strong>Award Winning</strong>
+                <p>Raih 5 penghargaan kuliner nasional</p>
+              </div>
+            </div>
+          </div>
+          <a href="#reservasi" class="btn btn--warm">Kunjungi Kami</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CHEF SECTION ======================== -->
+  <section class="chef section" id="chef">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Meet the Masters</span>
+        <h2 class="section-title">Tim Chef Kami</h2>
+        <p class="section-desc">Di balik setiap hidangan yang luar biasa, ada tangan-tangan terampil yang berdedikasi.</p>
+      </div>
+      <div class="chef__grid">
+
+        <article class="chef-card reveal">
+          <div class="chef-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=500&q=80" alt="Chef Marco" loading="lazy" />
+            <div class="chef-card__overlay">
+              <p class="chef-card__quote">"Memasak adalah bahasa cinta yang paling universal."</p>
+            </div>
+          </div>
+          <div class="chef-card__body">
+            <h3 class="chef-card__name">Marco De Luca</h3>
+            <span class="chef-card__role">Executive Chef</span>
+            <p class="chef-card__bio">Lulusan Le Cordon Bleu Paris dengan pengalaman 18 tahun di dapur restoran bintang Michelin di Eropa dan Asia.</p>
+            <div class="chef-card__skills">
+              <span>Italian Cuisine</span>
+              <span>Molecular Gastronomy</span>
+              <span>Pastry</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="chef-card chef-card--featured reveal">
+          <div class="chef-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=500&q=80" alt="Chef Sari" loading="lazy" />
+            <div class="chef-card__overlay">
+              <p class="chef-card__quote">"Tradisi adalah fondasi, inovasi adalah jiwanya."</p>
+            </div>
+          </div>
+          <div class="chef-card__body">
+            <h3 class="chef-card__name">Sari Dewi Kusuma</h3>
+            <span class="chef-card__role">Head Chef · Founder</span>
+            <p class="chef-card__bio">Visioner di balik SavoryBite. Menggabungkan kekayaan kuliner Nusantara dengan teknik French-Japanese untuk menciptakan identitas rasa yang khas.</p>
+            <div class="chef-card__skills">
+              <span>Nusantara Fusion</span>
+              <span>Japanese Technique</span>
+              <span>Menu Design</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="chef-card reveal">
+          <div class="chef-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=500&q=80" alt="Chef Reza" loading="lazy" />
+            <div class="chef-card__overlay">
+              <p class="chef-card__quote">"Setiap sajian adalah kesempatan untuk membuat momen tak terlupakan."</p>
+            </div>
+          </div>
+          <div class="chef-card__body">
+            <h3 class="chef-card__name">Reza Adiputra</h3>
+            <span class="chef-card__role">Sous Chef</span>
+            <p class="chef-card__bio">Spesialis seafood dan grill dengan keahlian memilih bahan baku premium. Mantan chef di resort bintang lima Bali dan Maldives.</p>
+            <div class="chef-card__skills">
+              <span>Seafood Specialist</span>
+              <span>Grill Mastery</span>
+              <span>Sauce & Stocks</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== TESTIMONI ======================== -->
+  <section class="testi section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Guest Reviews</span>
+        <h2 class="section-title">Kata Mereka</h2>
+      </div>
+      <div class="testi__grid">
+
+        <article class="testi-card reveal">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text">"Pengalaman fine dining terbaik yang pernah saya rasakan di Jakarta. Wagyu Tartare-nya adalah masterpiece — tekstur dan rasanya benar-benar di luar nalar. Pelayanannya pun sangat attentive."</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar">AR</div>
+            <div>
+              <strong>Anindya Ramadhani</strong>
+              <span>Food Critic · Jakarta</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testi-card testi-card--featured reveal">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text">"Kami merayakan anniversary di sini dan SavoryBite membuat malamnya sangat sempurna. Ambience-nya romantis, makanannya incredible, dan Chef Sari bahkan sempat keluar untuk menyapa kami. Truly five-star!"</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar">BW</div>
+            <div>
+              <strong>Bagas & Winda</strong>
+              <span>Anniversary Guest</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testi-card reveal">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text">"Lobster Thermidor-nya luar biasa! Sudah makan di berbagai restoran premium dunia, dan sajian ini tidak kalah. Harga sangat sebanding dengan kualitas yang ditawarkan. Akan kembali lagi!"</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar">HT</div>
+            <div>
+              <strong>Helena Tjahyadi</strong>
+              <span>Business Executive</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CTA SECTION ======================== -->
+  <section class="cta-section" id="reservasi">
+    <div class="cta-section__bg"></div>
+    <div class="cta-section__overlay"></div>
+    <div class="container cta-section__content reveal">
+      <span class="section-label light">Reservasi Meja</span>
+      <h2 class="cta-section__title">Siap untuk Malam<br /><em>yang Tak Terlupakan?</em></h2>
+      <p class="cta-section__desc">Pesan meja Anda sekarang dan biarkan kami menciptakan pengalaman kuliner yang akan selalu Anda kenang.</p>
+      <div class="cta-section__actions">
+        <a href="tel:+6221555000" class="btn btn--warm btn--lg">📞 +62 21 555-0000</a>
+        <a href="https://wa.me/628115550000" class="btn btn--ghost-light btn--lg" target="_blank">WhatsApp Kami</a>
+      </div>
+      <p class="cta-section__note">Reservasi tersedia Selasa – Minggu · 12:00 – 22:00</p>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Temukan Kami</span>
+        <h2 class="section-title">Informasi Kontak</h2>
+      </div>
+      <div class="contact__grid">
+
+        <div class="contact__info reveal">
+          <div class="contact__item">
+            <div class="contact__icon">📍</div>
+            <div>
+              <strong>Alamat</strong>
+              <p>Jl. Sudirman Kav. 52-53, Lantai 28<br />Senayan, Jakarta Selatan 12190</p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">📞</div>
+            <div>
+              <strong>Telepon</strong>
+              <p>+62 21 555-0000<br />+62 811 555-0000 (WhatsApp)</p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">🕐</div>
+            <div>
+              <strong>Jam Operasional</strong>
+              <p>Selasa – Jumat: 12:00 – 22:00<br />Sabtu – Minggu: 11:00 – 23:00<br /><em>Senin: Tutup</em></p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <p>reservation@savorybite.id<br />hello@savorybite.id</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__map reveal">
+          <div class="contact__map-placeholder">
+            <div class="contact__map-pin">📍</div>
+            <p>SavoryBite Fine Dining</p>
+            <span>Jl. Sudirman, Jakarta Selatan</span>
+            <a href="https://maps.google.com" class="btn btn--outline btn--sm" target="_blank">Buka Google Maps</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#home" class="navbar__logo footer__logo">
+            <span class="navbar__logo-icon">✦</span>
+            <span class="navbar__logo-text">SavoryBite</span>
+          </a>
+          <p class="footer__tagline">Where every meal becomes<br />an unforgettable memory.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#chef">Tim Chef</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Layanan</h4>
+          <ul>
+            <li><a href="#">Private Dining</a></li>
+            <li><a href="#">Catering Premium</a></li>
+            <li><a href="#">Corporate Event</a></li>
+            <li><a href="#">Wedding Banquet</a></li>
+            <li><a href="#">Chef's Table</a></li>
+          </ul>
+        </div>
+        <div class="footer__newsletter">
+          <h4>Newsletter</h4>
+          <p>Dapatkan update menu dan promo eksklusif langsung di inbox Anda.</p>
+          <div class="footer__form">
+            <input type="email" placeholder="Email Anda" class="footer__input" />
+            <button class="btn btn--warm btn--sm">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2024 SavoryBite Fine Dining. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

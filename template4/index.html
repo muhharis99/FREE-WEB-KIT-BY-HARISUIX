@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrandLux Hotel — Experience Luxury & Comfort</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#home" class="navbar__logo">
+        <span class="navbar__logo-icon">✦</span>
+        <span class="navbar__logo-text">GrandLux</span>
+        <span class="navbar__logo-sub">HOTEL</span>
+      </a>
+
+      <nav class="navbar__nav" id="navMenu">
+        <a href="#home" class="navbar__link">Home</a>
+        <a href="#rooms" class="navbar__link">Rooms</a>
+        <a href="#facilities" class="navbar__link">Facilities</a>
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--gold navbar__cta">Book Now</a>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1920&q=90" alt="GrandLux Hotel Lobby" class="hero__img" />
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow animate-fade">Bali, Indonesia · Est. 1998</p>
+      <h1 class="hero__title animate-fade animate-delay-1">
+        Experience <em>Luxury</em><br />& Comfort
+      </h1>
+      <p class="hero__desc animate-fade animate-delay-2">
+        Where every detail whispers elegance. Immerse yourself in a world crafted for the discerning traveller, where timeless design meets unrivalled hospitality.
+      </p>
+      <div class="hero__actions animate-fade animate-delay-3">
+        <a href="#rooms" class="btn btn--gold">Explore Rooms</a>
+        <a href="#about" class="btn btn--outline">Our Story</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint animate-fade animate-delay-4">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+
+    <div class="hero__stats animate-fade animate-delay-3">
+      <div class="hero__stat">
+        <span class="hero__stat-num">25+</span>
+        <span class="hero__stat-label">Years of Excellence</span>
+      </div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat">
+        <span class="hero__stat-num">120</span>
+        <span class="hero__stat-label">Luxury Suites</span>
+      </div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat">
+        <span class="hero__stat-num">4.9★</span>
+        <span class="hero__stat-label">Guest Rating</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ROOMS ===== -->
+  <section class="rooms section" id="rooms">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Our Accommodations</p>
+        <h2 class="section-title">Curated Rooms & Suites</h2>
+        <p class="section-desc">Each room is a sanctuary of comfort, thoughtfully designed to offer an unparalleled stay experience.</p>
+      </div>
+
+      <div class="rooms__grid">
+
+        <article class="room-card reveal">
+          <div class="room-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80" alt="Deluxe Room" class="room-card__img" loading="lazy" />
+            <span class="room-card__badge">Most Popular</span>
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__meta">
+              <h3 class="room-card__name">Deluxe Room</h3>
+              <div class="room-card__price">
+                <span class="room-card__price-from">from</span>
+                <span class="room-card__price-num">$280</span>
+                <span class="room-card__price-night">/night</span>
+              </div>
+            </div>
+            <p class="room-card__desc">Spacious retreat featuring floor-to-ceiling windows with panoramic ocean views, king-size bed, and private balcony.</p>
+            <ul class="room-card__amenities">
+              <li>45 m²</li>
+              <li>Ocean View</li>
+              <li>King Bed</li>
+              <li>Free WiFi</li>
+            </ul>
+            <a href="#contact" class="btn btn--gold btn--sm">Reserve Now</a>
+          </div>
+        </article>
+
+        <article class="room-card reveal reveal--delay-1">
+          <div class="room-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80" alt="Junior Suite" class="room-card__img" loading="lazy" />
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__meta">
+              <h3 class="room-card__name">Junior Suite</h3>
+              <div class="room-card__price">
+                <span class="room-card__price-from">from</span>
+                <span class="room-card__price-num">$420</span>
+                <span class="room-card__price-night">/night</span>
+              </div>
+            </div>
+            <p class="room-card__desc">An exquisite blend of luxury and functionality, featuring a separate living area, marble bathroom, and butler service.</p>
+            <ul class="room-card__amenities">
+              <li>65 m²</li>
+              <li>Garden View</li>
+              <li>King Bed</li>
+              <li>Butler</li>
+            </ul>
+            <a href="#contact" class="btn btn--gold btn--sm">Reserve Now</a>
+          </div>
+        </article>
+
+        <article class="room-card reveal reveal--delay-2">
+          <div class="room-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80" alt="Presidential Suite" class="room-card__img" loading="lazy" />
+            <span class="room-card__badge room-card__badge--gold">Signature</span>
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__meta">
+              <h3 class="room-card__name">Presidential Suite</h3>
+              <div class="room-card__price">
+                <span class="room-card__price-from">from</span>
+                <span class="room-card__price-num">$1,200</span>
+                <span class="room-card__price-night">/night</span>
+              </div>
+            </div>
+            <p class="room-card__desc">The pinnacle of opulence — a two-bedroom masterpiece with private pool, personal chef, and 360° panoramic terrace.</p>
+            <ul class="room-card__amenities">
+              <li>180 m²</li>
+              <li>Private Pool</li>
+              <li>2 Bedrooms</li>
+              <li>Chef</li>
+            </ul>
+            <a href="#contact" class="btn btn--gold btn--sm">Reserve Now</a>
+          </div>
+        </article>
+
+        <article class="room-card reveal">
+          <div class="room-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80" alt="Pool Villa" class="room-card__img" loading="lazy" />
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__meta">
+              <h3 class="room-card__name">Pool Villa</h3>
+              <div class="room-card__price">
+                <span class="room-card__price-from">from</span>
+                <span class="room-card__price-num">$950</span>
+                <span class="room-card__price-night">/night</span>
+              </div>
+            </div>
+            <p class="room-card__desc">Secluded paradise with a private plunge pool, lush tropical garden, and direct beach access for ultimate privacy.</p>
+            <ul class="room-card__amenities">
+              <li>130 m²</li>
+              <li>Private Pool</li>
+              <li>Beach Access</li>
+              <li>Butler</li>
+            </ul>
+            <a href="#contact" class="btn btn--gold btn--sm">Reserve Now</a>
+          </div>
+        </article>
+
+        <article class="room-card reveal reveal--delay-1">
+          <div class="room-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Penthouse" class="room-card__img" loading="lazy" />
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__meta">
+              <h3 class="room-card__name">Sky Penthouse</h3>
+              <div class="room-card__price">
+                <span class="room-card__price-from">from</span>
+                <span class="room-card__price-num">$2,500</span>
+                <span class="room-card__price-night">/night</span>
+              </div>
+            </div>
+            <p class="room-card__desc">Redefining sky-high luxury with a rooftop terrace, infinity hot tub, and a dedicated lifestyle concierge team.</p>
+            <ul class="room-card__amenities">
+              <li>320 m²</li>
+              <li>Rooftop</li>
+              <li>Hot Tub</li>
+              <li>Concierge</li>
+            </ul>
+            <a href="#contact" class="btn btn--gold btn--sm">Reserve Now</a>
+          </div>
+        </article>
+
+        <article class="room-card reveal reveal--delay-2">
+          <div class="room-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80" alt="Honeymoon Suite" class="room-card__img" loading="lazy" />
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__meta">
+              <h3 class="room-card__name">Honeymoon Suite</h3>
+              <div class="room-card__price">
+                <span class="room-card__price-from">from</span>
+                <span class="room-card__price-num">$680</span>
+                <span class="room-card__price-night">/night</span>
+              </div>
+            </div>
+            <p class="room-card__desc">Crafted for romance — a canopied king bed, rose petal turndown, private jacuzzi, and personalised welcome amenities.</p>
+            <ul class="room-card__amenities">
+              <li>90 m²</li>
+              <li>Jacuzzi</li>
+              <li>Canopy Bed</li>
+              <li>Romance Kit</li>
+            </ul>
+            <a href="#contact" class="btn btn--gold btn--sm">Reserve Now</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FACILITIES ===== -->
+  <section class="facilities section section--dark" id="facilities">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow section-eyebrow--light">World-Class Amenities</p>
+        <h2 class="section-title section-title--light">Our Facilities</h2>
+        <p class="section-desc section-desc--light">Every amenity thoughtfully curated to ensure your stay exceeds every expectation.</p>
+      </div>
+
+      <div class="facilities__grid">
+
+        <div class="facility-card reveal">
+          <div class="facility-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 16s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="3" y1="21" x2="3" y2="16"/></svg>
+          </div>
+          <h3 class="facility-card__name">Infinity Pool</h3>
+          <p class="facility-card__desc">Dual infinity pools overlooking the Indian Ocean, open sunrise to midnight.</p>
+        </div>
+
+        <div class="facility-card reveal reveal--delay-1">
+          <div class="facility-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="facility-card__name">Spa & Wellness</h3>
+          <p class="facility-card__desc">A sanctuary of healing — Balinese massages, hydrotherapy, and holistic treatments.</p>
+        </div>
+
+        <div class="facility-card reveal reveal--delay-2">
+          <div class="facility-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3 class="facility-card__name">Fine Dining</h3>
+          <p class="facility-card__desc">Three acclaimed restaurants serving local heritage and international gastronomy.</p>
+        </div>
+
+        <div class="facility-card reveal">
+          <div class="facility-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg>
+          </div>
+          <h3 class="facility-card__name">Fitness Center</h3>
+          <p class="facility-card__desc">State-of-the-art equipment, personal trainers, and yoga pavilion with ocean vistas.</p>
+        </div>
+
+        <div class="facility-card reveal reveal--delay-1">
+          <div class="facility-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1.05 1h8v3.15a3 3 0 0 1-.87 2.12L4 10.5l4.18 4.23A3 3 0 0 1 9 16.85V20H1v-3.15a3 3 0 0 1 .87-2.12L6 10.5l-4.13-4.23A3 3 0 0 1 1 4.15V1h.05z"/><path d="M22.95 1h-8v3.15a3 3 0 0 0 .87 2.12L20 10.5l-4.18 4.23A3 3 0 0 0 15 16.85V20h8v-3.15a3 3 0 0 0-.87-2.12L18 10.5l4.13-4.23A3 3 0 0 0 23 4.15V1h-.05z"/></svg>
+          </div>
+          <h3 class="facility-card__name">Beach Club</h3>
+          <p class="facility-card__desc">Private beach with sun loungers, water sports, and sunset cocktail service.</p>
+        </div>
+
+        <div class="facility-card reveal reveal--delay-2">
+          <div class="facility-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+          </div>
+          <h3 class="facility-card__name">Free Premium WiFi</h3>
+          <p class="facility-card__desc">High-speed fibre internet throughout all areas — pools, rooms, and gardens.</p>
+        </div>
+
+        <div class="facility-card reveal">
+          <div class="facility-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="facility-card__name">Business Center</h3>
+          <p class="facility-card__desc">Fully equipped meeting rooms, private boardrooms, and executive lounge access.</p>
+        </div>
+
+        <div class="facility-card reveal reveal--delay-1">
+          <div class="facility-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3 class="facility-card__name">24/7 Concierge</h3>
+          <p class="facility-card__desc">Round-the-clock personalised assistance — excursions, dining, and special requests.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__content reveal">
+          <p class="section-eyebrow">Our Heritage</p>
+          <h2 class="section-title">A Legacy of Unparalleled Hospitality</h2>
+          <p class="about__text">Founded in 1998 on the pristine shores of Bali, GrandLux Hotel has built its reputation on a singular philosophy: that luxury is not merely comfort, but an art form. Our founders envisioned a retreat where Indonesian warmth meets global sophistication — and for over two decades, that vision has never wavered.</p>
+          <p class="about__text">Every corridor tells a story. Every suite is a chapter. From hand-woven textiles sourced from local artisans to our award-winning culinary programme, we celebrate the richness of Indonesian culture while delivering the seamless excellence the world's most discerning guests expect.</p>
+          <div class="about__awards">
+            <div class="about__award">
+              <span class="about__award-icon">🏆</span>
+              <span>Forbes Five-Star 2024</span>
+            </div>
+            <div class="about__award">
+              <span class="about__award-icon">🌿</span>
+              <span>Green Globe Certified</span>
+            </div>
+            <div class="about__award">
+              <span class="about__award-icon">⭐</span>
+              <span>World's Best Hotels 2023</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--gold">Get in Touch</a>
+        </div>
+        <div class="about__visual reveal reveal--delay-1">
+          <div class="about__img-wrap">
+            <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=900&q=85" alt="GrandLux Hotel lobby" class="about__img" loading="lazy" />
+            <div class="about__img-accent"></div>
+          </div>
+          <div class="about__tag">
+            <span class="about__tag-num">25+</span>
+            <span class="about__tag-label">Years of<br/>Excellence</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery section section--sand" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Visual Stories</p>
+        <h2 class="section-title">A Glimpse of GrandLux</h2>
+      </div>
+      <div class="gallery__grid reveal">
+        <div class="gallery__item gallery__item--tall">
+          <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&q=80" alt="Hotel exterior" loading="lazy" />
+          <div class="gallery__item-overlay"></div>
+        </div>
+        <div class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="Bedroom" loading="lazy" />
+          <div class="gallery__item-overlay"></div>
+        </div>
+        <div class="gallery__item gallery__item--wide">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80" alt="Restaurant" loading="lazy" />
+          <div class="gallery__item-overlay"></div>
+        </div>
+        <div class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80" alt="Spa" loading="lazy" />
+          <div class="gallery__item-overlay"></div>
+        </div>
+        <div class="gallery__item gallery__item--tall">
+          <img src="https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=600&q=80" alt="Pool" loading="lazy" />
+          <div class="gallery__item-overlay"></div>
+        </div>
+        <div class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1561501900-3701fa6a0864?w=600&q=80" alt="Beach" loading="lazy" />
+          <div class="gallery__item-overlay"></div>
+        </div>
+        <div class="gallery__item gallery__item--wide">
+          <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=900&q=80" alt="Luxury suite" loading="lazy" />
+          <div class="gallery__item-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Guest Voices</p>
+        <h2 class="section-title">What Our Guests Say</h2>
+      </div>
+
+      <div class="testimonials__carousel reveal">
+        <div class="testimonials__track" id="testimonialsTrack">
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">"GrandLux completely redefined my expectations of luxury. The Presidential Suite was an experience I will relive in my memories for years. The staff's attention to detail was nothing short of extraordinary."</p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="James Whitfield" class="testimonial-card__avatar" loading="lazy" />
+              <div>
+                <p class="testimonial-card__name">James Whitfield</p>
+                <p class="testimonial-card__role">CEO, Whitfield Capital · London</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">"Our honeymoon at GrandLux was simply magical. The private pool villa, the sunset dinner on the beach, the warm smiles at every corner — we have already planned to return for our anniversary."</p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Sophie & Marc Laurent" class="testimonial-card__avatar" loading="lazy" />
+              <div>
+                <p class="testimonial-card__name">Sophie & Marc Laurent</p>
+                <p class="testimonial-card__role">Newly Weds · Paris, France</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">"I travel for business over 200 days a year and GrandLux stands alone. The business centre is flawless, the concierge anticipated my every need, and the spa made me forget the world entirely."</p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80" alt="David Chen" class="testimonial-card__avatar" loading="lazy" />
+              <div>
+                <p class="testimonial-card__name">David Chen</p>
+                <p class="testimonial-card__role">Managing Director · Singapore</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">"The infinity pool at sunset, the fine dining experience, the world-class spa — GrandLux doesn't just offer accommodation, it offers a transformation. A truly once-in-a-lifetime experience."</p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Layla Al-Hassan" class="testimonial-card__avatar" loading="lazy" />
+              <div>
+                <p class="testimonial-card__name">Layla Al-Hassan</p>
+                <p class="testimonial-card__role">Travel Blogger · Dubai, UAE</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="testimonials__controls">
+          <button class="testimonials__btn" id="prevBtn" aria-label="Previous">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="testimonials__dots" id="testimonialsDots"></div>
+          <button class="testimonials__btn" id="nextBtn" aria-label="Next">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="cta-section__bg">
+      <img src="https://images.unsplash.com/photo-1600011689032-8b628b8a8747?w=1920&q=85" alt="Hotel terrace" class="cta-section__img" loading="lazy" />
+      <div class="cta-section__overlay"></div>
+    </div>
+    <div class="container">
+      <div class="cta-section__content reveal">
+        <p class="section-eyebrow section-eyebrow--light">Limited Availability</p>
+        <h2 class="cta-section__title">Begin Your <em>GrandLux</em> Journey</h2>
+        <p class="cta-section__desc">Reserve your sanctuary today and receive complimentary airport transfer, welcome amenities, and early check-in.</p>
+        <div class="cta-section__actions">
+          <a href="#contact" class="btn btn--gold btn--lg">Book Your Stay</a>
+          <a href="tel:+6236012345678" class="btn btn--outline btn--lg">+62 361 234 5678</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Get in Touch</p>
+        <h2 class="section-title">Contact & Reservations</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <div class="contact__detail">
+            <div class="contact__detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4 class="contact__detail-label">Address</h4>
+              <p>Jl. Pantai Seminyak No. 88<br />Seminyak, Bali 80361<br />Indonesia</p>
+            </div>
+          </div>
+
+          <div class="contact__detail">
+            <div class="contact__detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.59 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 6.72 6.72l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <h4 class="contact__detail-label">Reservations</h4>
+              <p>+62 361 234 5678</p>
+              <p>+62 812 3456 7890 (WhatsApp)</p>
+            </div>
+          </div>
+
+          <div class="contact__detail">
+            <div class="contact__detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4 class="contact__detail-label">Email</h4>
+              <p>reservations@grandluxhotel.com</p>
+              <p>concierge@grandluxhotel.com</p>
+            </div>
+          </div>
+
+          <div class="contact__detail">
+            <div class="contact__detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h4 class="contact__detail-label">Operating Hours</h4>
+              <p>Reservations: 24 Hours / 7 Days</p>
+              <p>Check-in: 14:00 · Check-out: 12:00</p>
+            </div>
+          </div>
+
+          <div class="contact__map-placeholder">
+            <div class="contact__map-inner">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Seminyak, Bali</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__form-wrap reveal reveal--delay-1">
+          <form class="contact__form" id="contactForm">
+            <h3 class="contact__form-title">Send an Enquiry</h3>
+            <div class="contact__form-row">
+              <div class="form-group">
+                <label class="form-label" for="firstName">First Name</label>
+                <input type="text" id="firstName" class="form-input" placeholder="John" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">Last Name</label>
+                <input type="text" id="lastName" class="form-input" placeholder="Doe" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input type="email" id="email" class="form-input" placeholder="john@example.com" />
+            </div>
+            <div class="contact__form-row">
+              <div class="form-group">
+                <label class="form-label" for="checkin">Check-in</label>
+                <input type="date" id="checkin" class="form-input" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="checkout">Check-out</label>
+                <input type="date" id="checkout" class="form-input" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="roomType">Room Type</label>
+              <select id="roomType" class="form-input form-select">
+                <option value="">Select a room type</option>
+                <option>Deluxe Room</option>
+                <option>Junior Suite</option>
+                <option>Pool Villa</option>
+                <option>Honeymoon Suite</option>
+                <option>Sky Penthouse</option>
+                <option>Presidential Suite</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Special Requests</label>
+              <textarea id="message" class="form-input form-textarea" placeholder="Any special requirements or questions..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--gold btn--block">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">
+            <span class="navbar__logo-icon">✦</span>
+            <span>GrandLux</span>
+            <span class="navbar__logo-sub">HOTEL</span>
+          </a>
+          <p class="footer__tagline">Where every detail whispers elegance. A sanctuary of luxury on the shores of Bali.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="TripAdvisor">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__nav-group">
+          <h4 class="footer__nav-title">Explore</h4>
+          <ul class="footer__nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Rooms & Suites</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav-group">
+          <h4 class="footer__nav-title">Services</h4>
+          <ul class="footer__nav-list">
+            <li><a href="#">Spa & Wellness</a></li>
+            <li><a href="#">Fine Dining</a></li>
+            <li><a href="#">Events & Weddings</a></li>
+            <li><a href="#">Airport Transfer</a></li>
+            <li><a href="#">Concierge</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav-group">
+          <h4 class="footer__nav-title">Information</h4>
+          <ul class="footer__nav-list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2024 GrandLux Hotel. All rights reserved. Crafted with excellence.</p>
+        <p class="footer__bottom-awards">🏆 Forbes Five-Star · 🌿 Green Globe Certified · ⭐ World's Best Hotels</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
