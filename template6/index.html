@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartQueue – AI-Powered Queue & Patient Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;1,6..12,300;1,6..12,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════ NAVBAR ═══════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">
+        <span class="logo-mark">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="8" fill="url(#logo-gradient)"/>
+            <path d="M8 14h4l2-4 2 8 2-5 2 3h2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="logo-gradient" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6366f1"/>
+                <stop offset="1" stop-color="#8b5cf6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo-text">SmartQueue</span>
+      </a>
+
+      <nav class="navbar__nav" id="nav-menu">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#" class="btn btn--ghost">Sign In</a>
+        <a href="#" class="btn btn--primary">Get Started</a>
+      </div>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-shapes" aria-hidden="true">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+        <div class="shape shape--3"></div>
+        <div class="noise-overlay"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <div class="hero__badge">
+            <span class="badge-dot"></span>
+            New · AI Scheduling Engine v2.0 is live
+          </div>
+          <h1 class="hero__headline">
+            Run Your Clinic<br/>
+            <span class="text-gradient">10× Smarter</span><br/>
+            with AI
+          </h1>
+          <p class="hero__sub">
+            SmartQueue eliminates waiting room chaos. Our AI predicts patient flow, automates scheduling, and gives your team real-time clarity — all in one elegant platform.
+          </p>
+          <div class="hero__cta-group">
+            <a href="#" class="btn btn--primary btn--lg">
+              Start Free Trial
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#" class="btn btn--outline btn--lg">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M7 6l5 3-5 3V6z" fill="currentColor"/></svg>
+              Watch Demo
+            </a>
+          </div>
+          <p class="hero__meta">No credit card required · Free for 14 days · Cancel anytime</p>
+        </div>
+
+        <div class="hero__visual reveal reveal--delay-2">
+          <div class="dashboard-mockup">
+            <div class="mockup-titlebar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="mockup-url">app.smartqueue.io</span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-sidebar">
+                <div class="sidebar-logo">SQ</div>
+                <div class="sidebar-nav">
+                  <div class="sidebar-item active">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" fill="currentColor"/><rect x="9" y="1" width="6" height="6" rx="1" fill="currentColor" opacity=".4"/><rect x="1" y="9" width="6" height="6" rx="1" fill="currentColor" opacity=".4"/><rect x="9" y="9" width="6" height="6" rx="1" fill="currentColor" opacity=".4"/></svg>
+                  </div>
+                  <div class="sidebar-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="6" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  </div>
+                  <div class="sidebar-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M5 8h6M5 5h6M5 11h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  </div>
+                  <div class="sidebar-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="mockup-content">
+                <div class="mockup-header">
+                  <div>
+                    <div class="mockup-title">Queue Overview</div>
+                    <div class="mockup-subtitle">Tuesday, April 8 · 9:42 AM</div>
+                  </div>
+                  <div class="mockup-header-badge">Live</div>
+                </div>
+                <div class="mockup-stats">
+                  <div class="stat-card">
+                    <div class="stat-label">Waiting</div>
+                    <div class="stat-value">24</div>
+                    <div class="stat-change positive">↓ 3 from avg</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-label">Avg Wait</div>
+                    <div class="stat-value">8<span>min</span></div>
+                    <div class="stat-change positive">↓ 40%</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-label">Served Today</div>
+                    <div class="stat-value">67</div>
+                    <div class="stat-change">↑ On track</div>
+                  </div>
+                </div>
+                <div class="mockup-chart">
+                  <div class="chart-label">Patient Volume · Today</div>
+                  <div class="chart-bars">
+                    <div class="bar" style="--h: 40%"></div>
+                    <div class="bar" style="--h: 65%"></div>
+                    <div class="bar" style="--h: 80%"></div>
+                    <div class="bar active" style="--h: 95%"></div>
+                    <div class="bar" style="--h: 70%"></div>
+                    <div class="bar" style="--h: 55%"></div>
+                    <div class="bar" style="--h: 45%"></div>
+                    <div class="bar" style="--h: 30%"></div>
+                  </div>
+                </div>
+                <div class="mockup-queue">
+                  <div class="queue-item">
+                    <div class="queue-avatar" style="--c: #6366f1">JD</div>
+                    <div class="queue-info">
+                      <div class="queue-name">James D.</div>
+                      <div class="queue-type">General Checkup</div>
+                    </div>
+                    <div class="queue-wait">~3 min</div>
+                    <div class="queue-status status--active">Next</div>
+                  </div>
+                  <div class="queue-item">
+                    <div class="queue-avatar" style="--c: #8b5cf6">SA</div>
+                    <div class="queue-info">
+                      <div class="queue-name">Sarah A.</div>
+                      <div class="queue-type">Follow-up</div>
+                    </div>
+                    <div class="queue-wait">~8 min</div>
+                    <div class="queue-status status--waiting">Waiting</div>
+                  </div>
+                  <div class="queue-item">
+                    <div class="queue-avatar" style="--c: #06b6d4">MK</div>
+                    <div class="queue-info">
+                      <div class="queue-name">Mike K.</div>
+                      <div class="queue-type">Consultation</div>
+                    </div>
+                    <div class="queue-wait">~14 min</div>
+                    <div class="queue-status status--waiting">Waiting</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mockup-float mockup-float--ai">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1l1.5 3.5L12 6l-3.5 1.5L7 11l-1.5-3.5L2 6l3.5-1.5L7 1z" fill="#6366f1"/></svg>
+            AI Insight: Expect peak in 20 min
+          </div>
+          <div class="mockup-float mockup-float--notify">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1a5 5 0 015 5v2l1 2H1l1-2V6a5 5 0 015-5zM5.5 11a1.5 1.5 0 003 0" stroke="#10b981" stroke-width="1.3" stroke-linecap="round"/></svg>
+            SMS sent to 3 patients
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ TRUSTED BY ═══════════════════════════════════ -->
+    <section class="trusted">
+      <div class="container">
+        <p class="trusted__label">Trusted by 10,000+ healthcare teams worldwide</p>
+        <div class="trusted__logos">
+          <div class="trust-logo">MediCore</div>
+          <div class="trust-logo">CareSync</div>
+          <div class="trust-logo">HealthPath</div>
+          <div class="trust-logo">Novara Health</div>
+          <div class="trust-logo">PulseClinic</div>
+          <div class="trust-logo">WellBridge</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ FEATURES ═══════════════════════════════════ -->
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">Core Features</div>
+          <h2 class="section-title">Everything your clinic needs,<br/><span class="text-gradient">nothing it doesn't</span></h2>
+          <p class="section-sub">A complete operating system for modern healthcare providers — built for speed, built for scale.</p>
+        </div>
+
+        <div class="features__grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon" style="--icon-color: #6366f1; --icon-bg: #eef2ff">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2l2 5h5l-4 3 1.5 5L11 12l-4.5 3L8 10 4 7h5L11 2z" stroke="#6366f1" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="feature-title">AI Automation</h3>
+            <p class="feature-desc">Our predictive engine learns from your patient patterns to auto-assign slots, minimize gaps, and eliminate no-shows before they happen.</p>
+            <div class="feature-link">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </div>
+
+          <div class="feature-card reveal reveal--delay-1">
+            <div class="feature-icon" style="--icon-color: #8b5cf6; --icon-bg: #f5f3ff">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" stroke="#8b5cf6" stroke-width="1.5"/><path d="M11 7v4l3 2" stroke="#8b5cf6" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="feature-title">Real-time Monitoring</h3>
+            <p class="feature-desc">Watch your entire queue live. Get instant alerts when wait times spike, a room becomes available, or a patient checks in late.</p>
+            <div class="feature-link">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </div>
+
+          <div class="feature-card reveal reveal--delay-2">
+            <div class="feature-icon" style="--icon-color: #06b6d4; --icon-bg: #ecfeff">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="4" width="16" height="15" rx="2" stroke="#06b6d4" stroke-width="1.5"/><path d="M15 2v4M7 2v4M3 10h16" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="feature-title">Smart Scheduling</h3>
+            <p class="feature-desc">AI-driven appointment booking that adapts to doctor availability, patient urgency, and historical flow — automatically optimized every hour.</p>
+            <div class="feature-link">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="feature-icon" style="--icon-color: #f59e0b; --icon-bg: #fffbeb">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3 17l4-6 4 3 4-8 4 4" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="feature-title">Analytics Dashboard</h3>
+            <p class="feature-desc">Beautiful, actionable insights. Track throughput, peak hours, staff efficiency, and patient satisfaction — all in one glanceable view.</p>
+            <div class="feature-link">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </div>
+
+          <div class="feature-card reveal reveal--delay-1">
+            <div class="feature-icon" style="--icon-color: #10b981; --icon-bg: #ecfdf5">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2a9 9 0 100 18A9 9 0 0011 2zM8 11l2 2 4-4" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="feature-title">Patient Notifications</h3>
+            <p class="feature-desc">Automated SMS and email reminders slash no-show rates by up to 60%. Patients know exactly when to arrive — no calls required.</p>
+            <div class="feature-link">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </div>
+
+          <div class="feature-card reveal reveal--delay-2">
+            <div class="feature-icon" style="--icon-color: #ec4899; --icon-bg: #fdf2f8">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="#ec4899" stroke-width="1.5"/><rect x="12" y="3" width="7" height="7" rx="1.5" stroke="#ec4899" stroke-width="1.5"/><rect x="3" y="12" width="7" height="7" rx="1.5" stroke="#ec4899" stroke-width="1.5"/><rect x="12" y="12" width="7" height="7" rx="1.5" stroke="#ec4899" stroke-width="1.5" opacity=".4"/></svg>
+            </div>
+            <h3 class="feature-title">Multi-Branch Management</h3>
+            <p class="feature-desc">Manage multiple clinic locations from one central dashboard. Transfer patients, share staff, and unify reporting across all your branches.</p>
+            <div class="feature-link">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ HOW IT WORKS ═══════════════════════════════════ -->
+    <section class="how-it-works section" id="how-it-works">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">How It Works</div>
+          <h2 class="section-title">Up and running<br/><span class="text-gradient">in under 10 minutes</span></h2>
+          <p class="section-sub">We designed SmartQueue to be adopted instantly — no IT team, no lengthy onboarding.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3 class="step-title">Connect Your Clinic</h3>
+              <p class="step-desc">Sign up and import your existing patient records, doctor schedules, and room configurations in one click. Works with any EHR system.</p>
+            </div>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step reveal reveal--delay-1">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3 class="step-title">AI Learns Your Flow</h3>
+              <p class="step-desc">Our engine analyzes your first 7 days of data to build a custom prediction model tailored to your patient volume and visit patterns.</p>
+            </div>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step reveal reveal--delay-2">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3 class="step-title">Go Live on Every Screen</h3>
+              <p class="step-desc">Staff use the web dashboard, patients get SMS updates, and your waiting room display auto-updates. Zero friction, zero confusion.</p>
+            </div>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step reveal reveal--delay-3">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <h3 class="step-title">Optimize Continuously</h3>
+              <p class="step-desc">SmartQueue gets smarter every day. Weekly AI reports surface bottlenecks and recommend schedule changes to keep improving your KPIs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ DASHBOARD PREVIEW ═══════════════════════════════════ -->
+    <section class="preview section">
+      <div class="container">
+        <div class="preview__inner reveal">
+          <div class="preview__text">
+            <div class="section-tag">Dashboard Preview</div>
+            <h2 class="section-title">One screen.<br/><span class="text-gradient">Total clarity.</span></h2>
+            <p class="section-sub">A beautifully designed command center that gives every team member exactly what they need — real-time queue status, patient profiles, room availability, and predictive alerts.</p>
+            <ul class="preview__features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="#6366f1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Live queue with AI-powered ETAs
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="#6366f1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Patient history on hover
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="#6366f1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Drag-to-reschedule appointments
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="#6366f1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Instant SMS / notification trigger
+              </li>
+            </ul>
+            <a href="#" class="btn btn--primary">See full demo</a>
+          </div>
+          <div class="preview__screen">
+            <div class="screen-frame">
+              <div class="screen-inner">
+                <div class="analytics-widget">
+                  <div class="widget-header">Patient Satisfaction · This Week</div>
+                  <div class="widget-score">4.8<span>/5.0</span></div>
+                  <div class="widget-bars">
+                    <div class="wbar" style="--fill: 92%">
+                      <span class="wbar-label">Mon</span>
+                      <div class="wbar-track"><div class="wbar-fill"></div></div>
+                    </div>
+                    <div class="wbar" style="--fill: 88%">
+                      <span class="wbar-label">Tue</span>
+                      <div class="wbar-track"><div class="wbar-fill"></div></div>
+                    </div>
+                    <div class="wbar" style="--fill: 95%">
+                      <span class="wbar-label">Wed</span>
+                      <div class="wbar-track"><div class="wbar-fill"></div></div>
+                    </div>
+                    <div class="wbar" style="--fill: 79%">
+                      <span class="wbar-label">Thu</span>
+                      <div class="wbar-track"><div class="wbar-fill"></div></div>
+                    </div>
+                    <div class="wbar" style="--fill: 96%">
+                      <span class="wbar-label">Fri</span>
+                      <div class="wbar-track"><div class="wbar-fill"></div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="analytics-widget">
+                  <div class="widget-header">AI Predictions · Tomorrow</div>
+                  <div class="predict-list">
+                    <div class="predict-item">
+                      <div class="predict-time">08:00–10:00</div>
+                      <div class="predict-bar"><div class="predict-fill" style="width:30%"></div></div>
+                      <div class="predict-val">Low</div>
+                    </div>
+                    <div class="predict-item">
+                      <div class="predict-time">10:00–12:00</div>
+                      <div class="predict-bar"><div class="predict-fill" style="width:85%"></div></div>
+                      <div class="predict-val peak">Peak</div>
+                    </div>
+                    <div class="predict-item">
+                      <div class="predict-time">12:00–14:00</div>
+                      <div class="predict-bar"><div class="predict-fill" style="width:50%"></div></div>
+                      <div class="predict-val">Mod.</div>
+                    </div>
+                    <div class="predict-item">
+                      <div class="predict-time">14:00–16:00</div>
+                      <div class="predict-bar"><div class="predict-fill" style="width:70%"></div></div>
+                      <div class="predict-val">High</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="analytics-widget widget--metric-row">
+                  <div class="metric">
+                    <div class="metric-val">↓ 42%</div>
+                    <div class="metric-label">No-show rate</div>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-val">+28%</div>
+                    <div class="metric-label">Throughput</div>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-val">8.2 min</div>
+                    <div class="metric-label">Avg wait</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ PRICING ═══════════════════════════════════ -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">Pricing</div>
+          <h2 class="section-title">Simple, transparent<br/><span class="text-gradient">pricing that scales</span></h2>
+          <p class="section-sub">Start free. Upgrade when you're ready. No hidden fees, ever.</p>
+          <div class="pricing-toggle">
+            <span class="toggle-label" id="toggle-monthly">Monthly</span>
+            <button class="toggle-switch" id="pricing-toggle" aria-label="Toggle billing period" role="switch" aria-checked="false">
+              <span class="toggle-knob"></span>
+            </button>
+            <span class="toggle-label" id="toggle-yearly">Yearly <span class="toggle-save">Save 20%</span></span>
+          </div>
+        </div>
+
+        <div class="pricing__grid">
+          <div class="pricing-card reveal">
+            <div class="plan-name">Basic</div>
+            <div class="plan-price">
+              <span class="price-amount" data-monthly="49" data-yearly="39">$49</span>
+              <span class="price-period">/mo</span>
+            </div>
+            <p class="plan-desc">Perfect for solo practitioners and small clinics getting started.</p>
+            <ul class="plan-features">
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 3 doctors</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 500 patients/month</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Basic queue management</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> SMS notifications (200/mo)</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Email support</li>
+            </ul>
+            <a href="#" class="btn btn--outline btn--full">Get Started</a>
+          </div>
+
+          <div class="pricing-card pricing-card--featured reveal reveal--delay-1">
+            <div class="plan-badge">Most Popular</div>
+            <div class="plan-name">Pro</div>
+            <div class="plan-price">
+              <span class="price-amount" data-monthly="129" data-yearly="99">$129</span>
+              <span class="price-period">/mo</span>
+            </div>
+            <p class="plan-desc">For growing clinics that need AI power and advanced analytics.</p>
+            <ul class="plan-features">
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 15 doctors</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Unlimited patients</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Full AI automation</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Advanced analytics</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Unlimited SMS/email</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Priority 24/7 support</li>
+            </ul>
+            <a href="#" class="btn btn--white btn--full">Start Free Trial</a>
+          </div>
+
+          <div class="pricing-card reveal reveal--delay-2">
+            <div class="plan-name">Enterprise</div>
+            <div class="plan-price">
+              <span class="price-amount price-amount--custom">Custom</span>
+            </div>
+            <p class="plan-desc">For hospital networks and multi-branch organizations at scale.</p>
+            <ul class="plan-features">
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Unlimited doctors & branches</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom AI model training</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> White-label option</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> EHR & HL7 integration</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Dedicated success manager</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> SLA & uptime guarantee</li>
+            </ul>
+            <a href="#" class="btn btn--outline btn--full">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ TESTIMONIALS ═══════════════════════════════════ -->
+    <section class="testimonials section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">Testimonials</div>
+          <h2 class="section-title">Loved by clinicians<br/><span class="text-gradient">around the world</span></h2>
+        </div>
+
+        <div class="testimonials__grid">
+          <div class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">"SmartQueue cut our average wait time from 35 minutes to under 10. Our patients constantly comment on how smooth the experience feels now. Absolutely game-changing."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="--c: #6366f1">DR</div>
+              <div>
+                <div class="author-name">Dr. Rachel Kim</div>
+                <div class="author-role">Medical Director, PulseClinic · Seoul</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal reveal--delay-1">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">"The AI predictions are eerily accurate. We now pre-staff peak hours with confidence. No-shows are down 58% since we turned on the SMS reminders."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="--c: #8b5cf6">MO</div>
+              <div>
+                <div class="author-name">Marcus Oliveira</div>
+                <div class="author-role">COO, Novara Health · São Paulo</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal reveal--delay-2">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">"We manage 6 branches with SmartQueue. The central dashboard is a revelation — I can see everything from one tab. The enterprise team was incredible during onboarding."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="--c: #06b6d4">AT</div>
+              <div>
+                <div class="author-name">Aisha Tanaka</div>
+                <div class="author-role">CEO, WellBridge Group · Dubai</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ FAQ ═══════════════════════════════════ -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <div class="faq__inner">
+          <div class="section-header faq__header reveal">
+            <div class="section-tag">FAQ</div>
+            <h2 class="section-title">Questions?<br/><span class="text-gradient">We've got answers.</span></h2>
+            <p class="section-sub">Can't find what you're looking for? <a href="#" class="text-link">Chat with our team.</a></p>
+          </div>
+
+          <div class="faq__list reveal">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                How long does it take to set up SmartQueue?
+                <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Most clinics are fully operational within a single afternoon. Our onboarding wizard guides you through connecting your patient records, setting up doctor schedules, and configuring the waiting room display. If you need help, our support team is available via live chat the entire time.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Does SmartQueue integrate with our existing EHR system?
+                <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Yes. SmartQueue supports HL7 FHIR and connects natively with Epic, Cerner, DrChrono, and 40+ other EHR platforms. For Enterprise customers, we offer custom API integrations and dedicated technical support for any proprietary system.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Is patient data safe and HIPAA-compliant?
+                <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Absolutely. SmartQueue is fully HIPAA-compliant and ISO 27001 certified. All data is encrypted at rest (AES-256) and in transit (TLS 1.3). We never sell or share patient data, and you retain full data ownership. We also offer Business Associate Agreements (BAA) for all plan tiers.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Can I use SmartQueue on mobile devices?
+                <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Yes. SmartQueue is a fully responsive web app that works beautifully on tablets and smartphones. Native iOS and Android apps are available for Pro and Enterprise plans, with offline mode support so you can manage queues even with spotty connectivity.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What happens after the 14-day free trial?
+                <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>When your trial ends, you'll be prompted to choose a paid plan. Your data is never deleted — it's there waiting for you. If you choose not to upgrade, we'll export all your data in standard formats so you can take it anywhere. No pressure, no dark patterns.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Do you offer discounts for public hospitals or nonprofits?
+                <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Yes. We offer 40% off for verified public health institutions and registered nonprofits. We also have a free tier for community health clinics in underserved regions. Contact our team with your organization details to get started.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ CTA ═══════════════════════════════════ -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-bg-shapes" aria-hidden="true">
+            <div class="cta-shape cta-shape--1"></div>
+            <div class="cta-shape cta-shape--2"></div>
+          </div>
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to transform your clinic?</h2>
+            <p class="cta-sub">Join 10,000+ healthcare teams who've already made the switch. Start your 14-day free trial — no credit card required.</p>
+            <div class="cta-actions">
+              <a href="#" class="btn btn--white btn--lg">Start Free Trial</a>
+              <a href="#" class="btn btn--outline-white btn--lg">Schedule a Demo</a>
+            </div>
+            <p class="cta-footnote">Setup takes under 10 minutes · Cancel anytime · HIPAA-compliant</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════ FOOTER ═══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="navbar__logo">
+            <span class="logo-mark">
+              <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="28" height="28" rx="8" fill="url(#logo-gradient-footer)"/>
+                <path d="M8 14h4l2-4 2 8 2-5 2 3h2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="logo-gradient-footer" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6366f1"/>
+                    <stop offset="1" stop-color="#8b5cf6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <span class="logo-text">SmartQueue</span>
+          </a>
+          <p class="footer__tagline">The AI-powered queue management platform for modern healthcare teams.</p>
+          <div class="footer__social">
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M16.5 2.5s-1.5 1-2.5 1.2C13.3 2.7 12.2 2 11 2c-2.2 0-4 1.8-4 4 0 .3 0 .6.1.9C4.6 6.7 2.5 5.5 1 3.7c-.4.7-.6 1.5-.6 2.3 0 1.4.7 2.6 1.8 3.3-.6 0-1.2-.2-1.7-.5v.1c0 1.9 1.4 3.5 3.2 3.9-.3.1-.7.1-1 .1-.3 0-.5 0-.7-.1.5 1.6 2 2.7 3.7 2.7C4.2 16.6 2.7 17 1.1 17H.5c1.7 1.1 3.7 1.7 5.8 1.7 7 0 10.8-5.8 10.8-10.8v-.5c.7-.5 1.3-1.1 1.8-1.9H16.5z" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 2H3a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V3a1 1 0 00-1-1zM6 14H4V7h2v7zm-1-8a1.2 1.2 0 110-2.4A1.2 1.2 0 015 6zm9 8h-2v-3.5C12 9 11 9 11 10.3V14H9V7h2v1c.5-.8 2-1.4 3 0V14z" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 1C4.6 1 1 4.6 1 9c0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4V15c-2.2.5-2.7-1.1-2.7-1.1-.4-.9-.9-1.1-.9-1.1-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.2 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.2-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.5 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.2 0 3.1-1.9 3.8-3.7 4 .3.3.6.8.6 1.6v2.3c0 .2.1.5.5.4C15.7 15.5 18 12.5 18 9c0-4.4-3.6-8-9-8z" fill="currentColor"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <div class="footer__col">
+            <div class="footer__col-title">Product</div>
+            <a href="#" class="footer__link">Features</a>
+            <a href="#" class="footer__link">Pricing</a>
+            <a href="#" class="footer__link">Changelog</a>
+            <a href="#" class="footer__link">Roadmap</a>
+            <a href="#" class="footer__link">Status</a>
+          </div>
+          <div class="footer__col">
+            <div class="footer__col-title">Company</div>
+            <a href="#" class="footer__link">About</a>
+            <a href="#" class="footer__link">Blog</a>
+            <a href="#" class="footer__link">Careers</a>
+            <a href="#" class="footer__link">Press</a>
+            <a href="#" class="footer__link">Contact</a>
+          </div>
+          <div class="footer__col">
+            <div class="footer__col-title">Resources</div>
+            <a href="#" class="footer__link">Documentation</a>
+            <a href="#" class="footer__link">API Reference</a>
+            <a href="#" class="footer__link">Guides</a>
+            <a href="#" class="footer__link">Community</a>
+            <a href="#" class="footer__link">Support</a>
+          </div>
+          <div class="footer__col">
+            <div class="footer__col-title">Legal</div>
+            <a href="#" class="footer__link">Privacy Policy</a>
+            <a href="#" class="footer__link">Terms of Service</a>
+            <a href="#" class="footer__link">Cookie Policy</a>
+            <a href="#" class="footer__link">HIPAA Compliance</a>
+            <a href="#" class="footer__link">Security</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 SmartQueue, Inc. All rights reserved.</p>
+        <div class="footer__badges">
+          <span class="footer__badge">HIPAA Compliant</span>
+          <span class="footer__badge">ISO 27001</span>
+          <span class="footer__badge">SOC 2 Type II</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
